@@ -1,1 +1,2 @@
-Esto es una Pokedex creada con angular
+Esto es una Pokedex creada con angular .
+
