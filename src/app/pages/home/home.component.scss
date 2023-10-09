@@ -1,5 +1,38 @@
 #container {
     height: calc(100vh - 110px);
     display: grid;
+    align-items: center;
     grid-template-columns: 55% 45%;
+    background: repeating-linear-gradient(0deg,
+            #79a0e3 0px,
+            #79a0e3 10px,
+            #668cd7 10px,
+            #668cd7 50px,
+            #79a0e3 50px,
+            #79a0e3 60px,
+            #5576c5 60px,
+            #5576c5 90px,
+            #79a0e3 90px,
+            #79a0e3 100px,
+            #4c69b8 100px,
+            #4c69b8 140px,
+            #79a0e3 140px,
+            #79a0e3 150px,
+            #4660b4 150px,
+            #4660b4 160px,
+            #79a0e3 160px,
+            #79a0e3 170px,
+            #5576c5 170px,
+            #5576c5 190px,
+        );
+}
+
+app-foto-pokemon {
+    margin-left: 25%;
+}
+
+#tarjetasContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }

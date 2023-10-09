@@ -1,0 +1,45 @@
+#container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    isolation: isolate;
+
+    &.seleccionado::before {
+        position: absolute;
+        content: "";
+        width: calc(100% + 8px);
+        height: 120%;
+        left: -4px;
+        background-color: rgb(204, 21, 21);
+        z-index: -1;
+        border-radius: 15px;
+    }
+}
+
+#flecha {
+    height: 20px;
+    padding: 0 10px;
+}
+
+#tarjeta {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: rgb(234, 180, 80);
+    border-radius: 25px 5px 5px 25px;
+    padding-right: 2rem;
+    cursor: pointer;
+    width: 100%;
+    font-size: larger;
+    color: black;
+
+    span:first-of-type {
+        width: 95px;
+    }
+}
+
+img {
+    max-height: 20px;
+    padding-left: 1%;
+}

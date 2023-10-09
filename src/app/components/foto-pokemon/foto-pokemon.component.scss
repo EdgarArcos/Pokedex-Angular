@@ -1,0 +1,16 @@
+#container {
+    position: relative;
+    aspect-ratio: 1;
+    max-width: 500px;
+    border: solid 5px #8abeed;
+    border-radius: 15px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    outline: solid 12px #fae45d;
+    background: repeating-linear-gradient(0deg,
+            #f0f4f5,
+            #f0f4f5 15px,
+            #c7d9ee 15px,
+            #c7d9ee 25px);
+}
