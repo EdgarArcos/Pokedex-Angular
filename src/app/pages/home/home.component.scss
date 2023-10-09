@@ -1,0 +1,5 @@
+#container {
+    height: calc(100vh - 110px);
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
