@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges } from '@angular/core';
+import { Component, Input, Output, OnChanges, EventEmitter } from '@angular/core';
 import { Resultado } from 'src/app/Interfaces/pokeapi';
 import { PokemonService } from 'src/app/services/pokemon.service';
 
@@ -16,6 +16,8 @@ export class TarjetaPokemonComponent implements OnChanges {
   }
 
   @Input() data?: Resultado;
+  @Input() seleccionado: boolean = false
+  @Output() click = new EventEmitter<string>();
   id: string = "";
 
   extraerInformacion() {

@@ -34,5 +34,8 @@ app-foto-pokemon {
 #tarjetasContainer {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 6px;
+    max-height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
