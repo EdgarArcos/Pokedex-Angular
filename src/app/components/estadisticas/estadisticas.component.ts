@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Pokemon } from 'src/app/Interfaces/pokemon';
 
 @Component({
   selector: 'app-estadisticas',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class EstadisticasComponent {
 
+  @Input() pokemon?: Pokemon
 }

@@ -41,6 +41,8 @@ export class HomeComponent implements OnInit {
 
   async clickTarjeta(e: string) {
     this.pokemonSeleccionado = await this.pokemonService.getById(e);
+    console.log(this.pokemonSeleccionado.stats[0]);
+
   }
 
 };

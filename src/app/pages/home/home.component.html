@@ -1,5 +1,5 @@
 <main id="container">
-
+    <app-estadisticas [pokemon]="pokemonSeleccionado"></app-estadisticas>
     <app-foto-pokemon [pokemon]="pokemonSeleccionado">
     </app-foto-pokemon>
     <div id="tarjetasContainer" #tarjetas (scroll)="onScroll($event)">

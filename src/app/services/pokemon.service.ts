@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Resultado } from '../Interfaces/pokeapi';
 import { Pokemon } from '../Interfaces/pokemon';
+import { map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,6 @@ export class PokemonService {
     const offset = limit * (page - 1);
     const resultado = await fetch(`https://pokeapi.co/api/v2/pokemon/?limit=${limit}&offset=${offset}`)
     const resultadoJson = await resultado.json();
-    console.log(resultadoJson);
     if (resultadoJson.results.length > 0) return resultadoJson.results
     return [];
   }
@@ -23,9 +23,4 @@ export class PokemonService {
     const resultadoJson = await resultado.json();
     return resultadoJson
   }
-
-  getDescripcion() {
-
-  }
-
 }

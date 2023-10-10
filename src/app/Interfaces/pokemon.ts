@@ -346,7 +346,7 @@ export interface Pokemon {
     moves: Move[];
     species: Species;
     sprites: Sprites;
-    stats: Stat[];
+    stats: any[];
     types: Type[];
     past_types: PastType[];
 }

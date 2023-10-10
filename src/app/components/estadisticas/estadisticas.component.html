@@ -1,1 +1,19 @@
-<p>estadisticas works!</p>
+<div id="container">
+    <div class="area">
+        <app-tarjeta-pokemon></app-tarjeta-pokemon>
+    </div>
+    <div class="area">
+        <p><span class="etiqueta">Tipo</span><span class="tipo"></span><span *ngFor="let tipo of pokemon?.types"
+                class="tipo">{{tipo.type.name | uppercase}}</span></p>
+        <p><span class="etiqueta">Altura</span>{{pokemon?.height}}</p>
+        <p><span class="etiqueta">Peso</span>{{pokemon?.weight}}</p>
+    </div>
+    <div id="statsContainer" class="area">
+        <div>
+            <p><span class="etiqueta">Estadistica Base</span>{{(pokemon && pokemon.stats.length > 0)
+                &&pokemon.stats[0].base_stat}}</p>
+            <p><span class="etiqueta">Tentativa</span>{{(pokemon && pokemon.stats.length > 0)
+                &&pokemon.stats[0].effort}}</p>
+        </div>
+    </div>
+</div>

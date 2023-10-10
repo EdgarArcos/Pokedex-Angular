@@ -1,0 +1,35 @@
+#container {
+    height: 600px;
+    width: 95vw;
+    background-color: rgb(234, 180, 80);
+    display: grid;
+    grid-template-rows: 1fr 3fr 3fr;
+
+    .area:first-child {
+        flex-grow: 1;
+        background-color: #bfc3ce;
+        background-image: linear-gradient(45deg, #c3c5c4 25%, transparent 25%, transparent 75%, #c3c5c4 75%, #c3c5c4),
+            linear-gradient(-45deg, #c3c5c4 25%, transparent 25%, transparent 75%, #c3c5c4 75%, #c3c5c4);
+        background-size: 20px 20px;
+    }
+
+    .area {
+        padding-left: 60%;
+        background-color: #d3ecf6;
+        background-image: linear-gradient(45deg, #c4e8f8 25%, transparent 25%, transparent 75%, #c4e8f8 75%, #c4e8f8),
+            linear-gradient(-45deg, #c4e8f8 25%, transparent 25%, transparent 75%, #c4e8f8 75%, #c4e8f8);
+        background-size: 20px 20px;
+    }
+
+
+
+    .area:last-child {
+        background: repeating-linear-gradient(0deg,
+                #cce486,
+                #cce486 2px,
+                #bfd678 2px,
+                #bfd678 4px,
+            )
+    }
+
+}
