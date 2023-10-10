@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Pokemon } from 'src/app/Interfaces/pokemon';
 
 @Component({
@@ -9,4 +9,6 @@ import { Pokemon } from 'src/app/Interfaces/pokemon';
 export class EstadisticasComponent {
 
   @Input() pokemon?: Pokemon
+  @Input() abierto: boolean = false;
+  @Output() clickeado = new EventEmitter();
 }

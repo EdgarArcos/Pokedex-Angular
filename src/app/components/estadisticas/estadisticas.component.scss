@@ -1,9 +1,33 @@
 #container {
     height: 600px;
     width: 95vw;
+    border-radius: 0 50px 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 0.01fr;
+    justify-content: space-between;
+    font-size: x-large;
+    border: solid 2px #f4e4a6;
+    border-left: unset;
+}
+
+#datos {
+    height: 600px;
+    width: 92vw;
     background-color: rgb(234, 180, 80);
     display: grid;
     grid-template-rows: 1fr 3fr 3fr;
+
+    .area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 60%;
+        padding-right: 8%;
+        background-color: #d3ecf6;
+        background-image: linear-gradient(45deg, #c4e8f8 25%, transparent 25%, transparent 75%, #c4e8f8 75%, #c4e8f8),
+            linear-gradient(-45deg, #c4e8f8 25%, transparent 25%, transparent 75%, #c4e8f8 75%, #c4e8f8);
+        background-size: 20px 20px;
+    }
 
     .area:first-child {
         flex-grow: 1;
@@ -13,15 +37,12 @@
         background-size: 20px 20px;
     }
 
-    .area {
-        padding-left: 60%;
+    .area:nth-child(2) {
         background-color: #d3ecf6;
         background-image: linear-gradient(45deg, #c4e8f8 25%, transparent 25%, transparent 75%, #c4e8f8 75%, #c4e8f8),
             linear-gradient(-45deg, #c4e8f8 25%, transparent 25%, transparent 75%, #c4e8f8 75%, #c4e8f8);
         background-size: 20px 20px;
     }
-
-
 
     .area:last-child {
         background: repeating-linear-gradient(0deg,
@@ -29,7 +50,68 @@
                 #cce486 2px,
                 #bfd678 2px,
                 #bfd678 4px,
-            )
+            );
     }
 
+    #estadisticasContainer {
+        background-color: rgb(234, 180, 80);
+        max-width: 350px;
+        height: 80%;
+        border-radius: 10%;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-top: 10px;
+
+    }
+
+    .etiqueta {
+        background-color: #68bcea;
+        display: inline-block;
+        width: 150px;
+        margin: 5px 0;
+        margin-right: 10px;
+        margin-left: 1%;
+        text-align: center;
+        border-radius: 4px;
+        color: white;
+    }
+}
+
+button {
+    border: unset;
+    cursor: pointer;
+    width: 78px;
+    border-radius: 0 45px 45px 0;
+    background-color: rgb(234, 180, 80);
+
+    img {
+        height: 100px;
+        transition: 0.3s;
+
+        &:hover {
+            transition-timing-function: linear;
+            scale: 1.2;
+        }
+
+        &.girar {
+            margin-left: auto;
+            rotate: 180deg;
+        }
+    }
+}
+
+#backdrop {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.escondido {
+    pointer-events: none;
+    opacity: 0;
 }

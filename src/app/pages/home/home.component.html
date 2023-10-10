@@ -1,12 +1,13 @@
 <main id="container">
-    <app-estadisticas [pokemon]="pokemonSeleccionado"></app-estadisticas>
+    <app-estadisticas [pokemon]="pokemonSeleccionado" (clickeado)="cambiarEstadoEstadisticas()" [abierto]="estadistica"
+        [ngClass]="{abierto:estadistica}">
+    </app-estadisticas>
     <app-foto-pokemon [pokemon]="pokemonSeleccionado">
     </app-foto-pokemon>
     <div id="tarjetasContainer" #tarjetas (scroll)="onScroll($event)">
         <app-tarjeta-pokemon *ngFor="let pokemon of listaPokemon" [data]="pokemon"
             [seleccionado]="pokemon.name === pokemonSeleccionado?.name"
             (click)="clickTarjeta($event)"></app-tarjeta-pokemon>
-
     </div>
 
 

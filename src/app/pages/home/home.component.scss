@@ -44,4 +44,10 @@ app-foto-pokemon {
 app-estadisticas {
     position: absolute;
     z-index: 1;
+    left: -94vw;
+    transition: 1s;
+
+    &.abierto {
+        left: 0;
+    }
 }

@@ -15,7 +15,8 @@ export class HomeComponent implements OnInit {
   listaPokemon: Resultado[] = []
   pagina: number = 1
   pokemonSeleccionado?: Pokemon
-  cargando: boolean = false
+  cargando: boolean = false;
+  estadistica: boolean = false
 
   ngOnInit(): void {
     this.cargarLista();
@@ -40,8 +41,14 @@ export class HomeComponent implements OnInit {
   }
 
   async clickTarjeta(e: string) {
+    if (typeof e !== 'string') return
     this.pokemonSeleccionado = await this.pokemonService.getById(e);
-    console.log(this.pokemonSeleccionado.stats[0]);
+
+  }
+
+  cambiarEstadoEstadisticas() {
+    if (this.pokemonSeleccionado) this.estadistica = !this.estadistica;
+    console.log(this.estadistica)
 
   }
 
