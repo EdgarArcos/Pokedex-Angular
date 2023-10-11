@@ -6,7 +6,6 @@ import { Pokemon } from '../Interfaces/pokemon';
   providedIn: 'root'
 })
 export class PokemonService {
-
   async getByPage(page: number, limit: number = 40): Promise<Resultado[]> {
     const offset = limit * (page - 1);
     const resultado = await fetch(`https://pokeapi.co/api/v2/pokemon/?limit=${limit}&offset=${offset}`)
@@ -16,9 +15,9 @@ export class PokemonService {
   }
 
   async getById(id: string): Promise<Pokemon> {
-
     const resultado = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
     const resultadoJson = await resultado.json();
     return resultadoJson;
   }
+
 }

@@ -27,6 +27,21 @@
         );
 }
 
+#buscador {
+    position: absolute;
+    margin-left: 75vw;
+    margin-bottom: 97vh;
+    z-index: 3;
+
+    input {
+        position: relative;
+    }
+
+    button {
+        position: relative;
+    }
+}
+
 app-foto-pokemon {
     margin-left: 25%;
     z-index: 2;
@@ -40,7 +55,6 @@ app-foto-pokemon {
 ::-webkit-scrollbar-thumb {
     background-color: #e9563d;
     border-radius: 2px;
-    /* Con este truco hago el thumb más chico que su padre */
     box-shadow: inset 0 0 0 2px #882a1a;
     border-left: 1.5px solid transparent;
     border-right: 1.5px solid transparent;

@@ -1,4 +1,8 @@
 <main id="container">
+    <div id="buscador">
+        <input type="text" [(ngModel)]="nombre">
+        <button (click)="buscar()">Buscar</button>
+    </div>
     <app-estadisticas [pokemon]="pokemonSeleccionado" (clickeado)="cambiarEstadoEstadisticas()" [abierto]="estadistica"
         [ngClass]="{abierto:estadistica}">
     </app-estadisticas>

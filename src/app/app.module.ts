@@ -7,6 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { FotoPokemonComponent } from './components/foto-pokemon/foto-pokemon.component';
 import { TarjetaPokemonComponent } from './components/tarjeta-pokemon/tarjeta-pokemon.component';
 import { EstadisticasComponent } from './components/estadisticas/estadisticas.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +15,12 @@ import { EstadisticasComponent } from './components/estadisticas/estadisticas.co
     HomeComponent,
     FotoPokemonComponent,
     TarjetaPokemonComponent,
-    EstadisticasComponent
+    EstadisticasComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
