@@ -41,8 +41,8 @@ export class HomeComponent implements OnInit {
   };
 
   async cargarMismaLista() {
-    let prueba = this.listaPokemon.filter((i) => i.name.toLowerCase().indexOf(this.nombre.toLowerCase()) === 0)
-    this.listaPokemon = prueba;
+    let listaPokemonFiltrada = this.listaPokemon.filter((i) => i.name.toLowerCase().indexOf(this.nombre.toLowerCase()) === 0)
+    this.listaPokemon = listaPokemonFiltrada;
   };
 
   async buscar() {
