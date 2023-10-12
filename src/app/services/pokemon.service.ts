@@ -15,8 +15,8 @@ export class PokemonService {
     return [];
   }
 
-  async getById(idoNombre: string): Promise<Pokemon> {
-    const resultado = await fetch(`https://pokeapi.co/api/v2/pokemon/${idoNombre}`)
+  async getById(idNombre: string): Promise<Pokemon> {
+    const resultado = await fetch(`https://pokeapi.co/api/v2/pokemon/${idNombre}`)
     const resultadoJson = await resultado.json();
     return resultadoJson;
   }
