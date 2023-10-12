@@ -29,16 +29,32 @@
 
 #buscador {
     position: absolute;
-    margin-left: 75vw;
+    margin-left: 58vw;
     margin-bottom: 97vh;
     z-index: 3;
 
     input {
-        position: relative;
+        background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png) no-repeat 0px 5px;
+        background-size: 24px;
+        width: 100%;
+        color: white;
+        border: 1px solid #cbf3ee;
+        padding: 10px 10px 10px 30px;
+        outline: none;
+        margin-left: 38%;
     }
 
     button {
-        position: relative;
+        position: absolute;
+        height: 37px;
+        width: 80px;
+        font-size: 14px;
+        color: #555;
+        text-align: center;
+        line-height: 4px;
+        border-width: 0;
+        background-color: #cbf3ee;
+        cursor: pointer;
     }
 }
 
