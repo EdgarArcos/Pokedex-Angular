@@ -56,9 +56,9 @@ export class HomeComponent implements OnInit {
     }
     this.listaPokemon = []
     for (let index = 1; index < 100; index++) {
-      let prueba = this.listaPokemon.filter((i) => i.name.toLowerCase().indexOf(this.nombre.toLowerCase()) === 0)
-      this.listaPokemon = prueba;
-      this.listaPokemon = [...prueba, ...await this.pokemonService.getByPage(index)]
+      let listaPokemonFiltrada = this.listaPokemon.filter((i) => i.name.toLowerCase().indexOf(this.nombre.toLowerCase()) === 0)
+      this.listaPokemon = listaPokemonFiltrada;
+      this.listaPokemon = [...listaPokemonFiltrada, ...await this.pokemonService.getByPage(index)]
     }
     this.anteriorNombre = this.nombre
   }
