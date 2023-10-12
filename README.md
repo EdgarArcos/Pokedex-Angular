@@ -35,8 +35,9 @@ Funcionalidad para compartir información sobre los Pokémon.
 
 
 
-![Imagen Pokedex]()
-![Imagen Pokedex]()
-![Imagen Pokedex]()
-![Imagen Pokedex]()
-![Imagen Pokedex]()
+![Imagen Pokedex](/src/assets/imgreadme/Captura.PNG)
+![Imagen Pokedex](/src/assets/imgreadme/Captura2.PNG)
+![Imagen Pokedex](/src/assets/imgreadme/Captura3.PNG)
+![Imagen Pokedex](/src/assets/imgreadme/Captura4.PNG)
+![Imagen Pokedex](/src/assets/imgreadme/Captura5.PNG)
+![Imagen Pokedex](/src/assets/imgreadme/Capturafullscreen.PNG)
